@@ -5,6 +5,7 @@ pipeline {
             steps {
 		build job: 'Package_Application'
         }
+}
         stage('Deploy in Staging Environment'){
             steps{
                 build job: 'Deploy_App_staging_ENV'
